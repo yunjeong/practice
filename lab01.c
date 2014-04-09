@@ -95,12 +95,12 @@ void main(int argc, char* argv[]) {
 int conjunctionValue(int x, int y){
 
 	return x&y;
-}
+}											// AND 연산
 
 int disjunctionValue(int x, int y){
 
 	return x|y;
-}
+}											// OR 연산
 
 int exDIsjunctionValue(int x, int y){
 
@@ -112,7 +112,7 @@ int exDIsjunctionValue(int x, int y){
 	}
 	else
 		return TRUE;
-}
+}											
 
 int negationValue(int x){
 
@@ -157,7 +157,7 @@ void conjunction(Prop* x, Prop* y, Prop* r){
 
 		r->value[cnt] = conjunctionValue(x->value[cnt],y->value[cnt]);
 	}
-}
+}													
 
 void disjunction(Prop* x, Prop* y, Prop* r){
 
